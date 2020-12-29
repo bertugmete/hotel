@@ -1,0 +1,57 @@
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $border-color;
+
+  svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &__header {
+    padding: 1rem 5rem;
+    h1 {
+      letter-spacing: 0.5rem;
+      font-weight: 300;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__star {
+    display: flex;
+    margin-right: auto;
+    margin-left: 1rem;
+    fill: $color-primary;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    background-color: $color-primary;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    padding: 1rem;
+
+    &-score {
+      font-size: 1.8rem;
+    }
+
+    &-vote {
+      font-size: 1.2rem;
+    }
+  }
+}

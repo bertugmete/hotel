@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  height: 7rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $border-color;
+
+  @media only screen and (max-width: $bp-smallest-screen) {
+    flex-wrap: wrap;
+    height: 11rem;
+  }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/logo.png" alt="logo" class="logo" />
+      <div class="search">
+        <input class="search__input" type="text" placeholder="Search hotels" />
+        <svg class="search__icon">
+          <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+        </svg>
+      </div>
+      <div class="user__navigation">
+        <div class="user__navigation__icon__box">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+          </svg>
+          <span>3</span>
+        </div>
+        <div class="user__navigation__icon__box">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+          </svg>
+          <span>10</span>
+        </div>
+        <div class="user__navigation--user">
+          <img src="./img/user.jpg" alt="user__image" />
+          <span>Bertuğ</span>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <nav class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__list__item sidebar__list__item--active">
+            <a href="#" class="sidebar__list__item__link">
+              <svg>
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Hotels</span>
+            </a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#" class="sidebar__list__item__link">
+              <svg>
+                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+              </svg>
+              <span>Flight</span>
+            </a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#" class="sidebar__list__item__link">
+              <svg>
+                <use xlink:href="img/sprite.svg#icon-key"></use>
+              </svg>
+              <span>Hotels</span>
+            </a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#" class="sidebar__list__item__link">
+              <svg>
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <span>Hotels</span>
+            </a>
+          </li>
+        </ul>
+        <span class="copy">&copy;Bertuğ Mete</span>
+      </nav>
+      <main class="hotel-view">
+        <div class="photo-gallery">
+          <figure class="photo-gallery__item">
+            <img src="./img/hotel-1.jpg" alt="Hotel1" class="photo-gallery__item__photo" />
+          </figure>
+          <figure class="photo-gallery__item">
+            <img src="./img/hotel-2.jpg" alt="Hotel2" class="photo-gallery__item__photo" />
+          </figure>
+          <figure class="photo-gallery__item">
+            <img src="./img/hotel-3.jpg" alt="Hotel3" class="photo-gallery__item__photo" />
+          </figure>
+        </div>
+        <div class="overview">
+          <div class="overview__header">
+            <h1>Mete Hotel</h1>
+          </div>
+          <div class="overview__star">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+          <div class="overview__location">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+            </svg>
+            <button class="btn btn-inline">Marmaris,Turkey</button>
+          </div>
+          <div class="overview__rating">
+            <div class="overview__rating-score">
+              <span>9.6</span>
+            </div>
+            <div class="overview__rating-vote">
+              <span>327 votes</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="description">
+            <div class="general__information">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos
+                debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt
+                deserunt quae architecto voluptate.
+              </p>
+              <p>
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate
+                delectus, inventore iure aliquid aliquam.
+              </p>
+            </div>
+            <div class="pros">
+              <ul>
+                <li>
+                  <svg>
+                    <use use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                  <span>Close to the beach</span>
+                </li>
+                <li>
+                  <svg>
+                    <use use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                  <span>Free airport shuttle</span>
+                </li>
+                <li>
+                  <svg>
+                    <use use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                  <span>Air conditioning and heating</span>
+                </li>
+                <li>
+                  <svg>
+                    <use use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                  <span>We speak all languages</span>
+                </li>
+                <li>
+                  <svg>
+                    <use use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                  <span>Breakfast included</span>
+                </li>
+                <li>
+                  <svg>
+                    <use use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                  <span>Free wifi in all rooms</span>
+                </li>
+                <li>
+                  <svg>
+                    <use use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                  <span>Pets allowed</span>
+                </li>
+                <li>
+                  <svg>
+                    <use use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                  <span>Perfect for families</span>
+                </li>
+              </ul>
+            </div>
+            <div class="recommends">
+              <div class="recommends__information">
+                <p>Lucy and 3 other friends recommend this hotel.</p>
+              </div>
+              <div class="recommends__users">
+                <ul>
+                  <li>
+                    <img src="./img/user-1.jpg" alt="user1" class="recommends__users__photo" />
+                  </li>
+                  <li>
+                    <img src="./img/user-2.jpg" alt="user2" class="recommends__users__photo" />
+                  </li>
+                  <li>
+                    <img src="./img/user-3.jpg" alt="user3" class="recommends__users__photo" />
+                  </li>
+                  <li>
+                    <img src="./img/user-4.jpg" alt="user4" class="recommends__users__photo" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="user-reviews">
+            <div class="user-reviews__review">
+              <div class="user-reviews__review__content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque
+                  architecto dicta animi, totam, itaque officia ex.
+                </p>
+              </div>
+              <div class="user-reviews__review__information">
+                <img
+                  src="./img/user-6.jpg"
+                  class="user-reviews__review__information__user-photo"
+                  alt="user review photo1"
+                />
+                <div class="user-reviews__review__information__box">
+                  <span class="user-reviews__review__information__box--user-name">Sezen Esin</span>
+                  <span class="user-reviews__review__information__box--date">Feb 23rd, 2017</span>
+                </div>
+                <span class="user-reviews__review--score">7.8</span>
+              </div>
+            </div>
+            <div class="user-reviews__review">
+              <div class="user-reviews__review__content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque
+                  architecto dicta animi, totam, itaque officia ex.
+                </p>
+              </div>
+              <div class="user-reviews__review__information">
+                <img
+                  src="./img/user-5.jpg"
+                  class="user-reviews__review__information__user-photo"
+                  alt="user review photo2"
+                />
+                <div class="user-reviews__review__information__box">
+                  <span class="user-reviews__review__information__box--user-name"
+                    >Huseyin Korkmaz</span
+                  >
+                  <span class="user-reviews__review__information__box--date">Feb 23rd, 2017</span>
+                </div>
+                <span class="user-reviews__review--score">8.6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="book-now">
+          <h1 class="book-now--title">GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</h1>
+          <button class="btn btn-book-now">
+            <span class="btn-book-now--visible">Book now</span>
+            <span class="btn-book-now--invisible">4 rooms left</span>
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

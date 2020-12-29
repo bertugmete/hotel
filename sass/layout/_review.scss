@@ -1,0 +1,9 @@
+.user-reviews {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+
+  @media only screen and (max-width: $bp-small-screen) {
+    margin: 2rem 0;
+  }
+}

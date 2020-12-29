@@ -1,0 +1,41 @@
+.search {
+  display: flex;
+  align-items: center;
+  flex: 0 0 40%;
+
+  @media only screen and (max-width: $bp-smallest-screen) {
+    flex: 0 0 100%;
+    order: 1;
+  }
+
+  &__input {
+    border: none;
+    background-color: $color-grey-light-2;
+    font-size: 1.4rem;
+    width: 90%;
+    border-radius: 100px;
+    padding: 0.7rem 2rem;
+    margin-right: -3rem;
+    transition: all 0.4s;
+    color: inherit;
+
+    @media only screen and (max-width: $bp-smallest-screen) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+      width: 100%;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-light-4;
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-grey-dark-3;
+  }
+}

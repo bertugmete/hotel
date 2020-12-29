@@ -1,0 +1,27 @@
+.pros {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      flex: 0 0 50%;
+      list-style: none;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      svg {
+        width: 1.4rem;
+        height: 1.4rem;
+        fill: $color-primary;
+      }
+    }
+
+    padding: 0 0 4rem;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: $bp-small-screen) {
+      padding: 0 0 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.recommends {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__information {
+    p  {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__users {
+    ul {
+      display: flex;
+      list-style: none;
+    }
+    &__photo {
+      width: 4rem;
+      height: 4rem;
+      margin-right: -1.2rem;
+      border: 1px solid $color-white;
+      border-radius: 50%;
+    }
+  }
+}

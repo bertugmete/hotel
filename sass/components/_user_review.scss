@@ -1,0 +1,51 @@
+.user-reviews__review {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  padding: 3rem;
+  margin-bottom: 3rem;
+
+  @media only screen and (max-width: $bp-small-screen) {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    margin-bottom: 3rem;
+  }
+
+  &__information {
+    display: flex;
+
+    @media only screen and (max-width: $bp-small-screen) {
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
+      margin-right: auto;
+
+      @media only screen and (max-width: $bp-small-screen) {
+        margin-right: 2rem;
+      }
+
+      &--user-name {
+        font-weight: 600;
+      }
+
+      &--date {
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+
+    &__user-photo {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.user__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+
+  & > * svg {
+    height: 2.2rem;
+    width: 2.2rem;
+    fill: $color-grey-dark-2;
+  }
+
+  &__icon__box {
+    position: relative;
+
+    span {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: -1.2rem;
+      right: 1.2rem;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &--user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: 1.4rem;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 3.5rem;
+      margin-right: 2rem;
+    }
+  }
+}

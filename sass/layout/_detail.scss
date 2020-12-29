@@ -1,0 +1,13 @@
+.detail {
+  background-color: $color-grey-light-1;
+  font-size: 1.6rem;
+  padding: 5rem;
+  display: flex;
+
+  @media only screen and (max-width: $bp-medium-screen) {
+    padding: 2rem;
+  }
+  @media only screen and (max-width: $bp-small-screen) {
+    flex-direction: column;
+  }
+}

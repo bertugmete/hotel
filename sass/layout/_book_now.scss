@@ -1,0 +1,20 @@
+.book-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+
+  &--title {
+    display: flex;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: $bp-small-screen) {
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium-screen) {
+    padding: 1rem 0;
+  }
+}

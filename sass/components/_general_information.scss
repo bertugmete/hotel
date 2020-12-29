@@ -1,0 +1,16 @@
+.general__information {
+  p {
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  padding: 0 0 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid $border-color;
+
+  @media only screen and (max-width: $bp-small-screen) {
+    margin-bottom: 2rem;
+    padding: 0 0 2rem;
+  }
+}

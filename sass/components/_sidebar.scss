@@ -1,0 +1,93 @@
+.sidebar {
+  background-color: $color-grey-dark-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 20%;
+
+  .copy {
+    color: $color-grey-light-4;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-medium-screen) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+
+    @media only screen and (max-width: $bp-medium-screen) {
+      flex-direction: row;
+    }
+
+    &__item {
+      position: relative;
+
+      @media only screen and (max-width: $bp-large-screen) {
+        flex: 1;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1rem;
+        background-color: $color-primary;
+        transform: scaleY(0);
+        transition: transform 0.2s, width 0.4s 0.2s;
+      }
+
+      &:hover::before {
+        width: 100%;
+        transform: scaleY(1);
+      }
+      &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-grey-light-1;
+        padding: 2rem;
+        position: relative;
+        z-index: 10;
+
+        @media only screen and (max-width: $bp-small-screen) {
+          flex-direction: column;
+          padding: 1rem;
+        }
+
+        svg {
+          height: 1.75rem;
+          width: 1.75rem;
+          fill: currentColor;
+
+          @media only screen and (max-width: $bp-large-screen) {
+            margin-bottom: 0.5rem;
+          }
+        }
+        span {
+          margin-left: 1.5rem;
+          font-size: 1.4rem;
+          color: currentColor;
+          text-transform: uppercase;
+
+          @media only screen and (max-width: $bp-small-screen) {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &--active::before {
+        width: 100%;
+        transform: scaleY(1);
+      }
+    }
+  }
+}

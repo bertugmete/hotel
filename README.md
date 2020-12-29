@@ -15,3 +15,5 @@ Excute the following command:
 ```bash
 npm start
 ```
+
+https://hotelflexbox.netlify.app/

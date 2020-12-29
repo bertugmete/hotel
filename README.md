@@ -1,4 +1,4 @@
-# Basic hotel home page
+# Basic responsive hotel home page
 
 This application builds for using flexbox and sass.
 
